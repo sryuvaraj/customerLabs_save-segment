@@ -1,0 +1,37 @@
+{
+  "segs": [
+    {
+      "segmentName": "segmentOne",
+      "schema": [
+        {
+          "firstName": "First name"
+        },
+        {
+          "lastName": "Last Name"
+        }
+      ],
+      "id": "516c"
+    },
+    {
+      "id": "d174",
+      "segment_name": "Seg.Two",
+      "schema": [
+        {
+          "first_name": "First Name"
+        }
+      ]
+    },
+    {
+      "id": "e441",
+      "segment_name": "",
+      "schema": [
+        {
+          "gender": "Gender"
+        },
+        {
+          "account_name": "Account Name"
+        }
+      ]
+    }
+  ]
+}
