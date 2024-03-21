@@ -1,8 +1,7 @@
 import axios from "axios";
 import React, { useState } from "react";
 import { FiChevronLeft } from "react-icons/fi";
-import { FaReact } from 'react-icons/fa';
-
+import configration from "../config";
 
 const NewSchema = () => {
   const [showPopup, setShowPopup] = useState(false);
@@ -39,6 +38,7 @@ const NewSchema = () => {
   ]);
   const [currentSchemaList, setCurrentSchemaList] = useState([]);
   const [selectedSchema, setSelectedSchema] = useState("");
+  const [isLoad, setIsload] = useState(false);
 
   const addNewSchema = () => {
     setCurrentSchemaList([...currentSchemaList, selectedSchema]);
@@ -51,9 +51,27 @@ const NewSchema = () => {
         [schema]: schemasList.find((item) => item.value === schema).label,
       })),
     };
-    await axios.post("https://webhook.site/f684e862-0682-42d6-9119-677e800b2a11",data)
-    console.log(JSON.stringify(data, null, 2)); // Log the formatted data
+    setIsload(true);
+    let config = {
+      method: "POST",
+      url: configration.serverUrl,
+      headers: {
+        "content-type": "application/json",
+      },
+      data: data,
+    };
+
+    await axios
+      .request(config)
+      .then((response) => {
+        console.log(JSON.stringify(response.data));
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+    setIsload(false);
     setShowPopup(false);
+    alert("Data Processed!!! Please visit the <webhook.site> link");
   };
 
   const saveSegment = () => {
@@ -66,7 +84,12 @@ const NewSchema = () => {
         <div>
           <div id="homeDiv">
             <div id="nav">
-              <p id="viewAud"><span><FiChevronLeft size={25} className="pb-1 mx-2" /></span>View Audience</p>
+              <p id="viewAud">
+                <span>
+                  <FiChevronLeft size={25} className="pb-1 mx-2" />
+                </span>
+                View Audience
+              </p>
             </div>
             <div>
               <button
@@ -82,8 +105,20 @@ const NewSchema = () => {
             {showPopup && (
               <div id="popupBackgound">
                 <div id="popupDiv">
+                  {isLoad && (
+                    <div className="processingBackground">
+                      <h2 className="text-center processing">
+                        Data Processing.....
+                      </h2>
+                    </div>
+                  )}
                   <div id="popupNav">
-                    <p id="savingSegment"><span><FiChevronLeft size={25} className="pb-1 mx-2" /></span>Saving Segment</p>
+                    <p id="savingSegment">
+                      <span>
+                        <FiChevronLeft size={25} className="pb-1 mx-2" />
+                      </span>
+                      Saving Segment
+                    </p>
                   </div>
 
                   <div id="popupContent" className="bg-white">
@@ -99,8 +134,13 @@ const NewSchema = () => {
                       To save your segments, you need to add the schemas to
                       build the query
                     </p>
-                    <ul id="traitsList" style={{display:"flex", justifyContent:"flex-end"}}>
-                      <li className="px-4" id="userTrati">-User Traits</li>
+                    <ul
+                      id="traitsList"
+                      style={{ display: "flex", justifyContent: "flex-end" }}
+                    >
+                      <li className="px-4" id="userTrati">
+                        -User Traits
+                      </li>
                       <li id="groupTrait">-Group Traits</li>
                     </ul>
 
@@ -129,7 +169,9 @@ const NewSchema = () => {
                                 </option>
                               ))}
                             </select>
-                            <button className="btn btn-light mx-1 px-3">-</button>
+                            <button className="btn btn-light mx-1 px-3">
+                              -
+                            </button>
                           </div>
                         ))
                       )}

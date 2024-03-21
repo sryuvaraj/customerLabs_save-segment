@@ -33,11 +33,26 @@
   bottom: 0;
   left: 0;
   background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
-  z-index: 1000; /* Ensure the popup background is on top */
+  z-index: 1; /* Ensure the popup background is on top */
   display: flex;
   justify-content: flex-end; /* Align content to the right */
   align-items: flex-start; /* Align content to the top */
   padding: 2px;
+}
+
+.processing{
+  color: green;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    z-index: 2; /* Ensure the popup background is on top */
+    display: flex;
+    justify-content: center; /* Align content to the right */
+    align-items: center; /* Align content to the top */
+    padding: 2px;
 }
 
 #popupNav{

@@ -1,20 +1,39 @@
 {
   "segs": [
     {
-      "segmentName": "segmentOne",
+      "id": "3609",
+      "segment_name": "wreg",
       "schema": [
-        {
-          "firstName": "First name"
-        },
-        {
-          "lastName": "Last Name"
-        }
-      ],
-      "id": "516c"
+        {}
+      ]
     },
     {
-      "id": "d174",
-      "segment_name": "Seg.Two",
+      "id": "e83e",
+      "segment_name": "1",
+      "schema": [
+        {
+          "last_name": "Last Name"
+        }
+      ]
+    },
+    {
+      "id": "7cdf",
+      "segment_name": "Yuvaraj",
+      "schema": [
+        {
+          "last_name": "Last Name"
+        },
+        {
+          "first_name": "First Name"
+        },
+        {
+          "age": "Age"
+        }
+      ]
+    },
+    {
+      "id": "a798",
+      "segment_name": "yu",
       "schema": [
         {
           "first_name": "First Name"
@@ -22,29 +41,196 @@
       ]
     },
     {
-      "id": "e441",
-      "segment_name": "",
+      "id": "041b",
+      "segment_name": "yu",
       "schema": [
         {
-          "gender": "Gender"
-        },
-        {
-          "account_name": "Account Name"
+          "first_name": "First Name"
         }
       ]
     },
     {
-      "id": "c94d",
-      "segment_name": "Yuvaraj",
+      "id": "a80d",
+      "segment_name": "ert",
       "schema": [
         {
-          "city": "City"
-        },
+          "last_name": "Last Name"
+        }
+      ]
+    },
+    {
+      "id": "1808",
+      "segment_name": "4325",
+      "schema": [
         {
-          "gender": "Gender"
-        },
+          "first_name": "First Name"
+        }
+      ]
+    },
+    {
+      "id": "1974",
+      "segment_name": "32424",
+      "schema": [
         {
-          "age": "Age"
+          "last_name": "Last Name"
+        }
+      ]
+    },
+    {
+      "id": "aaa8",
+      "segment_name": "32424",
+      "schema": [
+        {
+          "last_name": "Last Name"
+        }
+      ]
+    },
+    {
+      "id": "9f39",
+      "segment_name": "32424",
+      "schema": [
+        {
+          "last_name": "Last Name"
+        }
+      ]
+    },
+    {
+      "id": "a7de",
+      "segment_name": "32424",
+      "schema": [
+        {
+          "last_name": "Last Name"
+        }
+      ]
+    },
+    {
+      "id": "d138",
+      "segment_name": "32424",
+      "schema": [
+        {
+          "last_name": "Last Name"
+        }
+      ]
+    },
+    {
+      "id": "2c81",
+      "segment_name": "32424",
+      "schema": [
+        {
+          "last_name": "Last Name"
+        }
+      ]
+    },
+    {
+      "id": "f3b8",
+      "segment_name": "32424",
+      "schema": [
+        {
+          "last_name": "Last Name"
+        }
+      ]
+    },
+    {
+      "id": "d70c",
+      "segment_name": "ewf",
+      "schema": []
+    },
+    {
+      "id": "96f9",
+      "segment_name": "er",
+      "schema": [
+        {
+          "first_name": "First Name"
+        }
+      ]
+    },
+    {
+      "id": "68f7",
+      "segment_name": "er",
+      "schema": [
+        {
+          "first_name": "First Name"
+        }
+      ]
+    },
+    {
+      "id": "b094",
+      "segment_name": "er",
+      "schema": [
+        {
+          "first_name": "First Name"
+        }
+      ]
+    },
+    {
+      "id": "fdb3",
+      "segment_name": "er",
+      "schema": [
+        {
+          "first_name": "First Name"
+        }
+      ]
+    },
+    {
+      "id": "feb8",
+      "segment_name": "er",
+      "schema": [
+        {
+          "first_name": "First Name"
+        }
+      ]
+    },
+    {
+      "id": "6a29",
+      "segment_name": "er",
+      "schema": [
+        {
+          "first_name": "First Name"
+        }
+      ]
+    },
+    {
+      "id": "913c",
+      "segment_name": "er",
+      "schema": [
+        {
+          "first_name": "First Name"
+        }
+      ]
+    },
+    {
+      "id": "4d7c",
+      "segment_name": "er",
+      "schema": [
+        {
+          "first_name": "First Name"
+        }
+      ]
+    },
+    {
+      "id": "c9d6",
+      "segment_name": "er",
+      "schema": [
+        {
+          "first_name": "First Name"
+        }
+      ]
+    },
+    {
+      "id": "ea12",
+      "segment_name": "123456",
+      "schema": [
+        {
+          "state": "State"
+        }
+      ]
+    },
+    {
+      "id": "4b1c",
+      "segment_name": "123456",
+      "schema": [
+        {
+          "state": "State"
         }
       ]
     }
