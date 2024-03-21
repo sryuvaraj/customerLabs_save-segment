@@ -32,6 +32,21 @@
           "account_name": "Account Name"
         }
       ]
+    },
+    {
+      "id": "c94d",
+      "segment_name": "Yuvaraj",
+      "schema": [
+        {
+          "city": "City"
+        },
+        {
+          "gender": "Gender"
+        },
+        {
+          "age": "Age"
+        }
+      ]
     }
   ]
 }

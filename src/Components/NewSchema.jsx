@@ -51,7 +51,7 @@ const NewSchema = () => {
         [schema]: schemasList.find((item) => item.value === schema).label,
       })),
     };
-    await axios.post("http://localhost:3001/segs",data)
+    await axios.post("https://webhook.site/f684e862-0682-42d6-9119-677e800b2a11",data)
     console.log(JSON.stringify(data, null, 2)); // Log the formatted data
     setShowPopup(false);
   };
