@@ -71,7 +71,7 @@ const NewSchema = () => {
       });
     setIsload(false);
     setShowPopup(false);
-    alert("Data Processed!!! Please visit the <webhook.site> link");
+    alert("Data Processed!!! Please visit the webhook.site link");
   };
 
   const saveSegment = () => {
@@ -108,7 +108,7 @@ const NewSchema = () => {
                   {isLoad && (
                     <div className="processingBackground">
                       <h2 className="text-center processing">
-                        Data Processing.....
+                        Data Processing...
                       </h2>
                     </div>
                   )}

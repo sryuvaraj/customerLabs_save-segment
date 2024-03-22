@@ -47,5 +47,21 @@ You don't have to ever use `eject`. The curated feature set is suitable for smal
 ### Run application using Docker
 
 ```
-docker run -it -p 3000:3000 customer_labs_segment
+docker run -it -p 3000:3000 yuvarajsr/customer_labs_segment
+```
+
+### To View the Posted Data on webhook.site
+
+Update `src/config.js` file to use your own webhook.site URL
+
+OR
+
+Click the link to view the data on [webhook.site](https://webhook.site/#!/view/1d6ddf33-52f7-45da-915d-e70a5065d5cd/e160f7f2-fae5-42c0-b393-10a8006deb84/1).
+
+OR
+
+Visiting the below link:
+
+```
+https://webhook.site/#!/view/1d6ddf33-52f7-45da-915d-e70a5065d5cd/e160f7f2-fae5-42c0-b393-10a8006deb84/1
 ```
