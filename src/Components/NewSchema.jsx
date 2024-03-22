@@ -1,7 +1,7 @@
 import axios from "axios";
 import React, { useState } from "react";
 import { FiChevronLeft } from "react-icons/fi";
-import configration from "../config";
+import configuration from "../config";
 
 const NewSchema = () => {
   const [showPopup, setShowPopup] = useState(false);
@@ -54,7 +54,7 @@ const NewSchema = () => {
     setIsload(true);
     let config = {
       method: "POST",
-      url: configration.serverUrl,
+      url: configuration.serverUrl,
       headers: {
         "content-type": "application/json",
       },
